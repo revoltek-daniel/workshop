@@ -1,0 +1,21 @@
+<h1>Schleifen:</h1>
+<p>Es gibt in PHP 4 Typen von Schleifen:</p>
+
+<p>Fangen wir mit der Kopfgesteuerten <code>while</code> Schleife an.</p>
+
+<pre>
+&lt;?php
+$i = 1;
+while ($i <= 10) {
+    echo $i++;  /* der ausgegebene Wert ist $i bevor
+                   er erhöht wird (post-increment) */
+}
+</pre>
+<p>Eine <code>while</code> Schleife wiederholt solange die Anweisungen im zugehörigen Block bis die Bedingung unwahr wird.</p>
+<p>Neben dem beenden durch das unwahr werden der Bedingung, gibt es noch Anweisungen mit dem der durchlauf der Schleife verändert werden kann, diese gelten für alle Schleifentypen</p>
+<ul>
+    <li><code>break;</code> - verlässt die Schleife sofort an der Stelle und beendet die Schleife</li>
+    <li><code>continue;</code> - verlässt den aktuellen Durchlauf und startet den nächsten Durchlauf</li>
+</ul>
+
+<p>Bei der Implementierung von Schleifen muss man darauf achten keine Endlosschleifen zu programmieren.</p>

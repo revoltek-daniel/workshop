@@ -1,0 +1,25 @@
+<h1>Switch</h1>
+<p>Eine weitere Kontrollstruktur ist switch.</p>
+
+<p>Wenn man z.B. viele Unterscheidungen hat, die auf dem Wert der selben Variable basieren, kann die Switch Anweisung die richtige wahl sein.</p>
+<pre>
+switch ($variable) {
+    case konstanterAusdruck1:
+        Anweisungen1 // ist optional
+    break; // ist optional
+
+    case konstanterAusdruck2:
+        Anweisungen2 // ist optional
+    break; // ist optional
+    ...
+
+    case konstanterAusdruckN:
+        AnweisungenN // ist optional
+    break; // ist optional
+
+    default: // ist optional
+        AnweisungenDefault
+}
+</pre>
+
+<p>Fehlt ein <code>break</code> wird der nächste Block mit ausgeführt.</p>

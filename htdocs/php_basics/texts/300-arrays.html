@@ -1,0 +1,45 @@
+<h1>Arrays</h1>
+
+<p>Um den letzten Schleifen Typ zu erklären, machen wir kurz einen Ausflug zu einem weiteren Komplexen Datentyp.</p>
+<p>Ein Array ist eine Sammlung von Werten, bisher haben wir immer einer Variable einen Wert von einem Datentyp zugewiesen.</p>
+<pre>
+&lt;?php
+$stringVariable = 'ich bin ein string';
+$integerVariable = 123;
+</pre>
+
+<p>Bei einem Array kann man nun mehrere Werte in einer Variable speichern.</p>
+
+<pre>
+&lt;php
+$arrayVariable = [
+    'stringVariable' => 'ich bin ein string',
+    'integerVariable' => 123,
+];
+</pre>
+
+<p>Ein Array definiert man entweder mit dem Schlüsselwort <code>array()</code> oder aber über die zu bevorzugende Version über eckige Klammern <code>[]</code></p>
+<p>Wie man in dem Beispiel sieht, ist ein Array aus einem Bezeichner oder auch Key und einem Wert aufgebaut, Bezeichner und Wert werden mit <code>=></code> voneinander getrennt.</p>
+<p>Der Key ist optional und kann auch eine Zahl sein, ist kein Key angegeben werden die Array Einträge durchnummeriert, beginnend bei 0</p>
+
+<p>Wir können einem Array weitere Werte hinzufügen:</p>
+<pre>
+&lt;php
+$arrayVariable = [
+    'stringVariable' => 'ich bin ein string',
+    'integerVariable' => 123,
+];
+$arrayVariable['key'] = 'neuer Wert';
+</pre>
+
+<p>Der Key ist hier wieder optional und kann auch leer gelassen werden, dann wird wieder ein Numerischer Index vergeben.</p>
+<p>Ähnlich wie die Zuweisung der Werte funktioniert auch der Zugriff auf das Array.</p>
+<pre>
+&lt;?php
+$arrayVariable = [
+    'stringVariable' => 'ich bin ein string',
+    'integerVariable' => 123,
+];
+
+echo $arrayVariable['stringVariable'];
+</pre>

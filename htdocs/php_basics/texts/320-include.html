@@ -1,0 +1,24 @@
+<h1>Include</h1>
+Steffis Lieblingsthema.
+
+<pre>
+&lt;?php
+include('header.php');
+</pre>
+
+Die Anweisung <code>include</code>, nimmt eine vorhandene Datei und fügt den Inhalt in die aktuelle Datei ein. Das heißt alle Variablen und Funktionen
+dieser Datei stehen auch in der aktuellen Datei zur Verfügung.
+
+<pre>
+&lt;?php
+include();
+include_once();
+require();
+require_once();
+</pre>
+
+<p>Der Unterschied zwischen <code>include</code> und <code>require</code> ist, die Art der Fehlermeldung, wenn eine Datei nicht "required" werden kann führt dieses zu einem Ausnahmefehler und die Ausführung wird abgebrochen wohingegen eine include Anweisung nur eine Warning wirft und diese "ignoriert" werden kann.</p>
+
+<p>Das _once sorgt dafür das selbst wenn das include in einer Schleife ausgeführt wird die Datei nur einmal eingebunden wird.</p>
+
+<div class="notice warning"><i class="fa fa-warning fa-large"></i>Dynamische Werte an ein include zu übergeben kann gefährlich sein, da so unter Umständen auch auf Dateien zugegriffen werden kann welche nicht erreichbar sein sollen.</div>

@@ -1,0 +1,55 @@
+<h1>PHP Funktionen</h1>
+<p>Um das Rad nicht immer neu erfinden zu müssen, gibt es sehr viele eingebaute PHP Funktionen. Dies ist bestimmt in den letzten Beispielen durch die Autovervollständigung im Editor schon aufgefallen.</p>
+<p>Es gibt eine sehr umfangreiche <a href="http://nl1.php.net/manual/de/ref.strings.php" target="_blank">Funktionsreferenz</a>. Interessant für uns, sind vorerst wahrscheinlich die folgenden Seiten:</p>
+<ul>
+    <li><a href="http://nl1.php.net/manual/de/book.strings.php" target="_blank"> Zeichenketten</a></li>
+    <li><a href="http://nl1.php.net/manual/de/book.math.php" target="_blank">Mathematische Funktionen</a></li>
+    <li><a href="http://nl1.php.net/manual/de/book.array.php" target="_blank">Array Funktionen</a></li>
+    <li><a href="http://nl1.php.net/manual/de/book.filesystem.php" target="_blank">Dateisystem Funktionen</a></li>
+    <li><a href="http://nl1.php.net/manual/de/book.dir.php" target="_blank">Verzeichnis-Funktionen</a></li>
+    <li><a href="http://nl1.php.net/manual/de/book.var.php" target="_blank">Variablenbehandlung</a></li>
+</ul>
+<p>Keine Angst, diese muss man nicht alle auswendig kennen und viele davon wird man auch wenig bis nie einsetzen.</p>
+
+<hr/>
+<p>Beim lesen einer Funktionsdefinition in der Referenz gibt es ein paar Dinge die man wissen sollte</p>
+<pre>
+strpos
+
+(PHP 4, PHP 5, PHP 7)
+
+strpos — Sucht die Position des ersten Vorkommens des Suchstrings in einem String
+Beschreibung
+
+int strpos ( string $haystack , mixed $needle [, int $offset = 0 ] )
+
+Gibt die numerische Position des ersten Vorkommens von needle innerhalb der Zeichenkette haystack zurück.
+</pre>
+<br/>
+<table>
+    <tr>
+        <th>Teil</th>
+        <th>Beschreibung</th>
+    </tr>
+    <tr>
+        <td>strpos</td>
+        <td>Der Name der Funktion. </td>
+    </tr>
+    <tr>
+        <td>(PHP 4, PHP 5, PHP 7)</td>
+        <td>strpos() gab es in allen Versionen von PHP 4 und PHP 5 und PHP 7</td>
+    </tr>
+    <tr>
+        <td>int</td>
+        <td>Type des Wertes, den diese Funktion zurückgibt, welche hier ein integer ist.</td>
+    </tr>
+    <tr>
+        <td>(string $haystack , mixed $needle [, int $offset = 0 ])</td>
+        <td>Die Liste an Parametern welche der Funktion übergeben werden. Es wird hier also ein String und ein "mixed" Wert erwartet. Der Wert in Klammern ist optional und im Default Fall 0</td>
+    </tr>
+</table>
+<hr/>
+
+<p>Kurz zum "mixed" Typ, diesen hatten wir bisher noch nicht, "mixed" steht einfach dafür das an dieser Stelle verschiedene Typen übergeben werden können.</p>
+<br/>
+<p>Für einige dieser Funktionen muss die entsprechende PHP Erweiterung installiert sein. Um herauszufinden welche Erweiterungen installiert sind und auch Einblick in die PHP Konfiguration zu bekommen, gibt es die eingebaute Funktion <code>phpinfo();</code></p>

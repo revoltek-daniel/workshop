@@ -1,0 +1,15 @@
+<h1>foreach Schleife</h1>
+
+<p>Mit einer <code>foreach</code> Schleife können wir über ein Array iterieren ohne vorher zu ermitteln wie viele Elemente in dem Array sind.</p>
+<p>In den meisten Fällen wird man daher diese Schleife verwenden.</p>
+<pre>
+&lt;?php
+$array = [
+   'testwert' => 123,
+   'testwert2' => 345,
+];
+
+foreach($array as $key => $value) {
+    echo 'Der Wert aus dem Eintrag ' . $key . ' ist ' . $value;
+}
+</pre>

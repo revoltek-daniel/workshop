@@ -1,0 +1,48 @@
+<h1>Kontrollstrukturen:</h1>
+<p>Nun lernen wir erste Logik :)</p>
+
+<h2>if / else / elseif</h2>
+
+<p>Abfrage ob eine Bedingung wahr ist.</p>
+
+<p>Vergleichsoperatoren</p>
+<ul>
+    <li> > Kleiner als</li>
+    <li> < Größer als</li>
+    <li> >= Kleiner gleich</li>
+    <li> <= Größer gleich</li>
+    <li>=== gleich, hier werden allerdings auch die Typen der Werte verglichen.</li>
+    <li>!== ungleich mit Typen vergleich</li>
+    <li>== gleich (Kein Typvergleich. Die Verwendung sollte wenn möglich unterbunden werden.)</li>
+    <li>!= ungleich (Kein Typvergleich. Die Verwendung sollte wenn möglich unterbunden werden.)</li>
+</ul>
+
+<pre>
+&lt;?php
+$name = 'test';
+if ($name === 'test') {
+    echo 'Name ist test.';
+}
+</pre>
+
+<p>Mehrere Bedingungen können miteinander kombiniert werden, dafür können Bedingungen mit <code>&&</code> oder <code>||</code> verknüpft werden.</p>
+<p><code>&&</code> steht hier für UND, <code>||</code> steht hier für ODER.</p>
+<pre>
+&lt;?php
+$wert = 10;
+if ($wert > 5 && $wert < 15) {
+    echo $wert;
+}
+</pre>
+
+<p>Durch Klammerung können komplexe Bedingungen realisiert werden</p>
+<pre>
+&lt;?php
+$wert = 10;
+if ($wert != 11 && ($wert > 5 && $wert < 15)) {
+    echo $wert;
+}
+</pre>
+
+<p>Neu in PHP 7 gut zu wissen das es sowas gibt ist allerdings erst in erweiterter Programmierung interessant, zum Beispiel bei der Implementierung von Sortieralgorithmen.</p>
+<div class="notice warning"><code><=></code> Raumschiff Operator -- "Eine Ganzzahl (integer) kleiner als, gleich oder größer als 0, wenn $a entsprechend kleiner als, gleich oder größer als $b ist." Alles klar? :)</div>

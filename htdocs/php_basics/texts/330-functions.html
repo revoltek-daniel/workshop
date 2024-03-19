@@ -1,0 +1,25 @@
+<h1>Funktionen</h1>
+<p>Bisher haben wir immer Scripte geschrieben die von oben nach unten abgearbeitet wurden, wenn wir etwas mehrfach machen wollten haben wir das Ganze dupliziert und erneut geschrieben.</p>
+<p>Mit einer Funktion können wir die Funktionalität auslagern und mehrfach, auch mit verschiedenen Werten, benutzen.</p>
+
+<p>Eine Funktion beginnt immer mit <code>function</code> danach folgt der Name der Funktion z.B  addition (Hier gelten dieselben Regeln wie für Variablen). In Runden Klammern () folgen dann optional Parameter, die an die Funktion übergeben werden sollen.</p>
+<p>Der Funktionskopf ist also wie folgt aufgebaut <code>function addition($summand1, $summand2)</code></p>
+<p>Die eigentliche Funktionslogik folgt im Funktionskörper, dieser wird von geschweiften Klammern {} umgeben.</p>
+<p>Um einen Wert aus einer Funktion zurück zu liefern gibt es das <code>return</code> Schlüsselwort. Dieses beendet die Funktion und liefert den folgenden Wert zurück, dieser kann auch leer sein.</p>
+<p>Variablen, die in einer Funktion definiert werden sind auch nur in dieser gültig und es kann nur dort auf diese zugegriffen werden.</p>
+
+<pre>
+&lt;?php
+function addition($sumand1, $summand2) {
+    return $summand1 + $summand2;
+}
+
+echo addition(5, 5); // 10
+echo addition(2, 2); // 4
+echo addition(4, 2); // 6
+</pre>
+
+<p>Manchmal kann es nötig sein, dass ein Parameter nur optional übergeben werden soll, dies kann man erreichen in dem man diesem in der Funktionskopf Definition einen Default Wert gibt.</p>
+<p>Der Default Wert wird durch <code>$optional = 'default Wert'</code> definiert</p>
+
+<div class="notice warning"><i class="fa fa-warning fa-large"></i>Optionale Parameter sollten immer erst nach den verpflichtenden Parametern definiert werden.</div>
